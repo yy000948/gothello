@@ -1,20 +1,20 @@
-### 本地对战
-# 1. 启动后端（WebSocket）
+# 本地对战
+## 1. 启动后端（WebSocket）
 cd server
 npm install
 npm start    
 
-# 2. 启动前端（静态文件）
+## 2. 启动前端（静态文件）
 cd client
 npm install -g serve
 npx serve . --listen 3000
 
 
-### 跨网对战
+# 跨网对战
 后端部署在一台公网可达的机器（云服务器 / 支持公网 IP 的家宽 / 穿透隧道）。
 前端把 Socket.IO 的连接地址改成这台公网机器的 IP 或域名 + 端口。
 
-# 隧道模式
+## 隧道模式
 npm start
 ngrok http 4000
 
@@ -24,3 +24,4 @@ ngrok http 4000
 const socket = io('https://abcd1234.ngrok.io');
 
 访问https://abcd1234.ngrok.io 即可跨网对战
+
