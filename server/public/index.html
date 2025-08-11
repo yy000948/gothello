@@ -328,7 +328,7 @@
 
     <script>
         (() => {
-            const socket = io('https://f14ae00e6278.ngrok-free.app');
+            const socket = io('https://gothello.onrender.com/');
             const roomId = new URLSearchParams(location.search).get('room') || 'public';
             let mySide = null;
             let myRole = null;
@@ -692,5 +692,6 @@
         })();
     </script>
 </body>
+
 
 </html>
